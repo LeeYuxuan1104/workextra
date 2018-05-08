@@ -16,6 +16,7 @@ import android.os.Handler;
 import android.annotation.SuppressLint;
 import android.app.Activity;
 import android.content.Context;
+import android.content.Intent;
 import android.support.v4.view.PagerAdapter;
 import android.support.v4.view.ViewPager;
 import android.view.View;
@@ -30,6 +31,7 @@ import android.widget.Toast;
 
 public class VChooseActivity extends Activity implements OnClickListener{
 	private Context		    mContext;
+	private Intent			mIntent;
 	/*上端框架的处理*/
 	// 记录上一次点的位置
 	private int     		oldPosition = 0;
@@ -159,27 +161,32 @@ public class VChooseActivity extends Activity implements OnClickListener{
 					switch (position) {
 					case 0:
 						str="经营分析";
-						
+						mIntent=new Intent(mContext, VRunAnalysisActivity.class);
 						break;
 					case 1:
 						str="进销存管理";
+						mIntent=new Intent(mContext, VRunBuyandSellActivity.class);
 						break;
 					case 2:
 						str="PLC控制系统管理";
+						mIntent=new Intent(mContext, VRunPLCActivity.class);
 						break;
 					case 3:
 						str="员工管理";
+						mIntent=new Intent(mContext, VRunWorkerActivity.class);
 						break;
 					case 4:
 						str="财务对账";
+						mIntent=new Intent(mContext, VRunFinanceActivity.class);
 						break;
 					case 5:
 						str="交接班管理";
+						mIntent=new Intent(mContext, VRunClassActivity.class);
 						break;
 					case 6:
 						str="单价、折返";
+						mIntent=new Intent(mContext, VRunPriceActivity.class);
 						break;
-
 					default:
 						break;
 					}
@@ -188,7 +195,7 @@ public class VChooseActivity extends Activity implements OnClickListener{
 					switch (position) {
 					case 0:
 						str="安全管理";
-						
+						mIntent=new Intent(mContext, VRunPriceActivity.class);
 						break;
 					case 1:
 						str="消耗、更新";
@@ -237,6 +244,7 @@ public class VChooseActivity extends Activity implements OnClickListener{
 					break;
 				}
 				Toast.makeText(mContext, str, Toast.LENGTH_SHORT).show();
+				startActivity(mIntent);
 			}
 		});
 		
