@@ -211,13 +211,15 @@ public class VChooseActivity extends Activity implements OnClickListener{
 					switch (position) {
 					case 0:
 						str="客户信息档案";
-						
+						mIntent=new Intent(mContext, VUserInfoActivity.class);
 						break;
 					case 1:
 						str="客户身份识别";
+						mIntent=new Intent(mContext, VUserIdentifyActivity.class);
 						break;
 					case 2:
 						str="客户消费支付";
+						mIntent=new Intent(mContext, VUserPayActivity.class);
 						break;
 					default:
 						break;
@@ -227,13 +229,19 @@ public class VChooseActivity extends Activity implements OnClickListener{
 					switch (position) {
 					case 0:
 						str="LNG加气机数据记录";
-						
+						mIntent=new Intent(mContext, VEnergyLNGActivity.class);
 						break;
 					case 1:
 						str="CNG加油机数据记录";
+						mIntent=new Intent(mContext, VEnergyCNGActivity.class);
 						break;
 					case 2:
 						str="加油机数据记录";
+						mIntent=new Intent(mContext, VEnergyOilActivity.class);
+						break;
+					case 3:
+						str="充电桩数据记录";
+						mIntent=new Intent(mContext, VEnergyElecActivity.class);
 						break;
 					default:
 						break;
@@ -336,7 +344,7 @@ public class VChooseActivity extends Activity implements OnClickListener{
 			break;
 		case R.id.trans:
 			index		 = 3;
-			imageIds	 = new int[]{R.drawable.d1,R.drawable.d2,R.drawable.d3};
+			imageIds	 = new int[]{R.drawable.d1,R.drawable.d2,R.drawable.d3,R.drawable.d4};
 			break;
 		default:
 			break;
