@@ -1,0 +1,111 @@
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="fill_parent"
+    android:layout_height="fill_parent" >
+
+    <com.model.view.SlidingMenuView
+        android:id="@+id/sliding_menu_view"
+        android:layout_width="fill_parent"
+        android:layout_height="fill_parent" >
+
+        <RelativeLayout
+            android:id="@+id/left_sliding_tab"
+            android:layout_width="wrap_content"
+            android:layout_height="fill_parent"
+            android:background="#36648b"
+            android:orientation="vertical"
+            android:padding="5dip" >
+
+            <RelativeLayout
+                android:id="@+id/laytop"
+                android:layout_width="fill_parent"
+                android:layout_height="50dp" 
+                android:layout_alignParentTop="true"
+                >
+
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_alignParentRight="true"
+                    android:onClick="hideMenu"
+                    android:textSize="20sp"
+                    android:layout_marginRight="5dp"
+                    android:textStyle="bold"
+                    android:textColor="#ffffff"
+                    android:text="@string/test_closemenu" />
+            </RelativeLayout>
+
+            <LinearLayout
+                android:id="@+id/laymiddle"
+                android:layout_width="fill_parent"
+                android:layout_height="wrap_content"
+                android:layout_below="@id/laytop"
+                android:gravity="center"
+                android:orientation="vertical"
+                >
+                <RelativeLayout
+                    android:id="@+id/layimage"
+                    android:layout_width="100dp"
+                    android:layout_height="100dp"
+                    android:background="@drawable/shape_round" >
+
+                    <TextView
+                        android:id="@+id/ivimage"
+                        android:layout_width="80dp"
+                        android:layout_height="80dp"
+                        android:layout_centerInParent="true"
+                        android:background="@drawable/ic_launcher" />
+                </RelativeLayout>
+
+                <TextView
+                    android:id="@+id/tvname"
+                    android:layout_width="fill_parent"
+                    android:layout_height="50dp"
+                    android:gravity="center"
+                    android:text="@string/test_name"
+                    android:textColor="#ffffff"
+                    android:textSize="20sp"
+                    android:textStyle="bold" />
+            </LinearLayout>
+            <RelativeLayout
+                android:id="@+id/layBottom"
+                android:layout_width="fill_parent"
+                android:layout_height="50dp"
+                android:layout_alignParentBottom="true" >
+
+                <TextView
+                    android:id="@+id/btnexit"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_alignParentRight="true"
+                    android:layout_centerInParent="true"
+                    android:layout_marginRight="20dp"
+                    android:textSize="20sp"
+                    android:text="@string/test_exitlogin"
+                    android:textColor="#ffffff"
+                    android:textStyle="bold" />
+            </RelativeLayout>
+
+            <ListView
+                    android:id="@+id/listLeft"
+                    android:layout_width="fill_parent"
+                    android:layout_height="fill_parent"
+                    android:layout_marginLeft="10dp"
+                    android:layout_marginRight="10dp"
+                    android:layout_marginTop="20dp"
+                    android:divider="#00000000"
+                    android:dividerHeight="0dp" 
+                    android:layout_below="@id/laymiddle"
+                    android:layout_above="@id/layBottom"
+                    >
+                </ListView>
+            </RelativeLayout>
+
+        <FrameLayout
+            android:id="@+id/sliding_body"
+            android:layout_width="fill_parent"
+            android:layout_height="fill_parent" >
+        </FrameLayout>
+    </com.model.view.SlidingMenuView>
+
+</RelativeLayout>

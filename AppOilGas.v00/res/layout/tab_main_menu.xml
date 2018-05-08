@@ -1,0 +1,238 @@
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="fill_parent"
+    android:layout_height="fill_parent"
+    android:background="#ffffff" >
+
+    <RelativeLayout
+        android:id="@+id/laytop"
+        android:layout_width="fill_parent"
+        android:layout_height="50dp"
+        android:layout_alignParentTop="true"
+        android:background="#ffffff" >
+
+        <TextView
+            android:id="@+id/btnlogin"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_alignParentLeft="true"
+            android:layout_centerInParent="true"
+            android:layout_marginLeft="10dp"
+            android:text="@string/test_login"
+            android:textColor="#A2B5CD"
+            android:textSize="15sp"
+            android:textStyle="bold" />
+
+        <TextView
+            android:id="@+id/btnadd"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_alignParentRight="true"
+            android:layout_centerInParent="true"
+            android:layout_marginRight="10dp"
+            android:text="@string/test_add"
+            android:textColor="#A2B5CD"
+            android:textSize="20sp"
+            android:textStyle="bold" />
+
+        <TextView
+            android:id="@+id/btnmessage"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_centerInParent="true"
+            android:layout_marginRight="20dp"
+            android:layout_toLeftOf="@id/btnadd"
+            android:text="@string/test_message"
+            android:textColor="#A2B5CD"
+            android:textSize="15sp"
+            android:textStyle="bold" />
+
+        <TextView
+            android:id="@+id/app_title"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_centerInParent="true"
+            android:text="@string/test_app_title"
+            android:textColor="#A2B5CD"
+            android:textSize="20sp"
+            android:textStyle="bold" />
+    </RelativeLayout>
+
+    <FrameLayout
+        android:id="@+id/layMiddle"
+        android:layout_width="match_parent"
+        android:layout_height="200dip"
+        android:layout_below="@id/laytop" >
+
+        <android.support.v4.view.ViewPager
+            android:id="@+id/vp"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent" />
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="35dip"
+            android:layout_gravity="bottom"
+            android:background="#33000000"
+            android:gravity="center"
+            android:orientation="vertical" >
+
+            <TextView
+                android:id="@+id/title"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:textColor="@android:color/white" />
+
+            <LinearLayout
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="3dip"
+                android:orientation="horizontal" >
+
+                <View
+                    android:id="@+id/dot_0"
+                    android:layout_width="5dip"
+                    android:layout_height="5dip"
+                    android:layout_marginLeft="2dip"
+                    android:layout_marginRight="2dip"
+                    android:background="@drawable/dot_focused" />
+
+                <View
+                    android:id="@+id/dot_1"
+                    android:layout_width="5dip"
+                    android:layout_height="5dip"
+                    android:layout_marginLeft="2dip"
+                    android:layout_marginRight="2dip"
+                    android:background="@drawable/dot_normal" />
+
+                <View
+                    android:id="@+id/dot_2"
+                    android:layout_width="5dip"
+                    android:layout_height="5dip"
+                    android:layout_marginLeft="2dip"
+                    android:layout_marginRight="2dip"
+                    android:background="@drawable/dot_normal" />
+
+                <View
+                    android:id="@+id/dot_3"
+                    android:layout_width="5dip"
+                    android:layout_height="5dip"
+                    android:layout_marginLeft="2dip"
+                    android:layout_marginRight="2dip"
+                    android:background="@drawable/dot_normal" />
+
+                <View
+                    android:id="@+id/dot_4"
+                    android:layout_width="5dip"
+                    android:layout_height="5dip"
+                    android:layout_marginLeft="2dip"
+                    android:layout_marginRight="2dip"
+                    android:background="@drawable/dot_normal" />
+            </LinearLayout>
+        </LinearLayout>
+    </FrameLayout>
+
+    <LinearLayout
+        android:id="@+id/layfunction"
+        android:layout_width="fill_parent"
+        android:layout_height="50dp"
+        android:layout_below="@id/layMiddle"
+        android:gravity="center"
+        android:orientation="horizontal" >
+
+        <RelativeLayout
+            android:id="@+id/run"
+            android:layout_width="fill_parent"
+            android:layout_height="fill_parent"
+            android:layout_weight="1" >
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_centerInParent="true"
+                android:gravity="center"
+                android:text="@string/test_runmanage"
+                android:textColor="#000000"
+                android:textSize="15sp" />
+        </RelativeLayout>
+
+        <View
+            android:layout_width="1dip"
+            android:layout_height="fill_parent"
+            android:layout_gravity="center_horizontal"
+            android:background="#CFCFCF" />
+
+        <RelativeLayout
+            android:id="@+id/device"
+            android:layout_width="fill_parent"
+            android:layout_height="fill_parent"
+            android:layout_weight="1" >
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_centerInParent="true"
+                android:gravity="center"
+                android:text="@string/test_devicemanage"
+                android:textColor="#000000"
+                android:textSize="15sp" />
+        </RelativeLayout>
+
+        <View
+            android:layout_width="1dip"
+            android:layout_height="fill_parent"
+            android:layout_gravity="center_horizontal"
+            android:background="#CFCFCF" />
+
+        <RelativeLayout
+            android:id="@+id/customer"
+            android:layout_width="fill_parent"
+            android:layout_height="fill_parent"
+            android:layout_weight="1" >
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_centerInParent="true"
+                android:gravity="center"
+                android:text="@string/test_customermanage"
+                android:textColor="#000000"
+                android:textSize="15sp" />
+        </RelativeLayout>
+
+        <View
+            android:layout_width="1dip"
+            android:layout_height="fill_parent"
+            android:layout_gravity="center_horizontal"
+            android:background="#CFCFCF" />
+
+        <RelativeLayout
+            android:id="@+id/trans"
+            android:layout_width="fill_parent"
+            android:layout_height="fill_parent"
+            android:layout_weight="1" >
+
+            <TextView
+                android:layout_width="fill_parent"
+                android:layout_height="wrap_content"
+                android:layout_centerInParent="true"
+                android:gravity="center"
+                android:text="@string/test_transmanage"
+                android:textColor="#000000"
+                android:textSize="15sp" />
+        </RelativeLayout>
+    </LinearLayout>
+
+    <View
+        android:id="@+id/space"
+        android:layout_width="match_parent"
+        android:layout_height="1px"
+        android:layout_below="@id/layfunction"
+        android:background="#CFCFCF" />
+	<com.model.view.GalleryFlow
+        android:id="@+id/gallery_flow"
+        android:layout_width="fill_parent"
+        android:layout_height="fill_parent"
+        android:layout_below="@id/space"
+        />
+</RelativeLayout>
