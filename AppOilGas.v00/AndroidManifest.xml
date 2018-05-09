@@ -92,27 +92,31 @@
             >
         </activity>
         <activity
-            android:name="com.view.VEnergyLNGActivity"
+            android:name="com.view.energy.VEnergyLNGActivity"
             android:screenOrientation="portrait"
             android:theme="@android:style/Theme.NoTitleBar"></activity>
         <activity
-            android:name="com.view.VEnergyOilActivity"
+            android:name="com.view.energy.VEnergyOilActivity"
             android:screenOrientation="portrait"
             android:theme="@android:style/Theme.NoTitleBar"></activity>
         <activity
-            android:name="com.view.VEnergyElecActivity"
+            android:name="com.view.energy.VEnergyElecActivity"
             android:screenOrientation="portrait"
             android:theme="@android:style/Theme.NoTitleBar"></activity>
         <activity
-            android:name="com.view.VUserIdentifyActivity"
+            android:name="com.view.energy.VEnergyCNGActivity"
             android:screenOrientation="portrait"
             android:theme="@android:style/Theme.NoTitleBar"></activity>
         <activity
-            android:name="com.view.VUserInfoActivity"
+            android:name="com.view.user.VUserIdentifyActivity"
             android:screenOrientation="portrait"
             android:theme="@android:style/Theme.NoTitleBar"></activity>
         <activity
-            android:name="com.view.VUserPayActivity"
+            android:name="com.view.user.VUserInfoActivity"
+            android:screenOrientation="portrait"
+            android:theme="@android:style/Theme.NoTitleBar"></activity>
+        <activity
+            android:name="com.view.user.VUserPayActivity"
             android:screenOrientation="portrait"
             android:theme="@android:style/Theme.NoTitleBar"></activity>
     </application>
