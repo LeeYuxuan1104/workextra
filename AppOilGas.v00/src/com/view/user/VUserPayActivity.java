@@ -34,7 +34,7 @@ public class VUserPayActivity extends Activity implements OnClickListener{
         listView=(ListView) findViewById(R.id.list);
     }
     private void initEvent(){
-        title.setText("客户身份识别");
+        title.setText("客户消费支付");
         back.setText("< 返回");
         home.setText("主页");
         back.setOnClickListener(this);
