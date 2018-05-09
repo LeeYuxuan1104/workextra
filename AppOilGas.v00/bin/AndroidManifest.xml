@@ -31,57 +31,90 @@
             android:theme="@android:style/Theme.NoTitleBar" 
             >
         </activity>
-        <activity android:name="com.view.VRunAnalysisActivity" 
+        <activity android:name="com.view.run.VRunAnalysisActivity" 
             android:screenOrientation="portrait"
             android:theme="@android:style/Theme.NoTitleBar" 
             >
         </activity>
-        <activity android:name="com.view.VRunBuyandSellActivity" 
+        <activity android:name="com.view.run.VRunBuyandSellActivity" 
             android:screenOrientation="portrait"
             android:theme="@android:style/Theme.NoTitleBar" 
             >
         </activity>
-        <activity android:name="com.view.VRunClassActivity" 
+        <activity android:name="com.view.run.VRunClassActivity" 
             android:screenOrientation="portrait"
             android:theme="@android:style/Theme.NoTitleBar" 
             >
         </activity>
-        <activity android:name="com.view.VRunFinanceActivity" 
+        <activity android:name="com.view.run.VRunFinanceActivity" 
             android:screenOrientation="portrait"
             android:theme="@android:style/Theme.NoTitleBar" 
             >
         </activity>
-        <activity android:name="com.view.VRunPLCActivity" 
+        <activity android:name="com.view.run.VRunPLCActivity" 
             android:screenOrientation="portrait"
             android:theme="@android:style/Theme.NoTitleBar" 
             >
         </activity>
-        <activity android:name="com.view.VRunPriceActivity" 
+        <activity android:name="com.view.run.VRunPriceActivity" 
             android:screenOrientation="portrait"
             android:theme="@android:style/Theme.NoTitleBar" 
             >
         </activity>
-        <activity android:name="com.view.VRunWorkerActivity" 
+        <activity 
+            android:name="com.view.run.VRunWorkerActivity" 
             android:screenOrientation="portrait"
             android:theme="@android:style/Theme.NoTitleBar" 
             >
         </activity>
-        <activity android:name="com.view.VDeviceIQActivity" 
+        <activity 
+            android:name="com.view.device.VDeviceIQActivity" 
             android:screenOrientation="portrait"
             android:theme="@android:style/Theme.NoTitleBar" 
             >
         </activity>
-        <activity android:name="com.view.VDeviceSafeActivity" 
+        <activity 
+            android:name="com.view.device.VDeviceSafeActivity" 
             android:screenOrientation="portrait"
             android:theme="@android:style/Theme.NoTitleBar" 
             >
         </activity>
-        <activity android:name="com.view.VDeviceSpendActivity" 
+        <activity 
+            android:name="com.view.device.VDeviceSpendActivity"
             android:screenOrientation="portrait"
             android:theme="@android:style/Theme.NoTitleBar" 
             >
         </activity>
-
+        <activity 
+            android:name="com.view.run.a.VRAIncomeActivity"
+            android:screenOrientation="portrait"
+            android:theme="@android:style/Theme.NoTitleBar" 
+            >
+        </activity>
+        <activity
+            android:name="com.view.VEnergyLNGActivity"
+            android:screenOrientation="portrait"
+            android:theme="@android:style/Theme.NoTitleBar"></activity>
+        <activity
+            android:name="com.view.VEnergyOilActivity"
+            android:screenOrientation="portrait"
+            android:theme="@android:style/Theme.NoTitleBar"></activity>
+        <activity
+            android:name="com.view.VEnergyElecActivity"
+            android:screenOrientation="portrait"
+            android:theme="@android:style/Theme.NoTitleBar"></activity>
+        <activity
+            android:name="com.view.VUserIdentifyActivity"
+            android:screenOrientation="portrait"
+            android:theme="@android:style/Theme.NoTitleBar"></activity>
+        <activity
+            android:name="com.view.VUserInfoActivity"
+            android:screenOrientation="portrait"
+            android:theme="@android:style/Theme.NoTitleBar"></activity>
+        <activity
+            android:name="com.view.VUserPayActivity"
+            android:screenOrientation="portrait"
+            android:theme="@android:style/Theme.NoTitleBar"></activity>
     </application>
 
 </manifest>

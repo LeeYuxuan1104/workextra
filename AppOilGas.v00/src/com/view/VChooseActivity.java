@@ -9,6 +9,16 @@ import java.util.concurrent.TimeUnit;
 import com.lyz.gallery.activity.ImageAdapter;
 import com.model.view.ChooseMenuView;
 import com.model.view.GalleryFlow;
+import com.view.device.VDeviceIQActivity;
+import com.view.device.VDeviceSafeActivity;
+import com.view.device.VDeviceSpendActivity;
+import com.view.run.VRunAnalysisActivity;
+import com.view.run.VRunBuyandSellActivity;
+import com.view.run.VRunClassActivity;
+import com.view.run.VRunFinanceActivity;
+import com.view.run.VRunPLCActivity;
+import com.view.run.VRunPriceActivity;
+import com.view.run.VRunWorkerActivity;
 
 import com.app.zhugeyang.R;
 import android.os.Bundle;
@@ -195,13 +205,15 @@ public class VChooseActivity extends Activity implements OnClickListener{
 					switch (position) {
 					case 0:
 						str="安全管理";
-						mIntent=new Intent(mContext, VRunPriceActivity.class);
+						mIntent=new Intent(mContext, VDeviceSafeActivity.class);
 						break;
 					case 1:
 						str="消耗、更新";
+						mIntent=new Intent(mContext, VDeviceSpendActivity.class);
 						break;
 					case 2:
 						str="智能诊断";
+						mIntent=new Intent(mContext, VDeviceIQActivity.class);
 						break;
 					default:
 						break;
@@ -246,7 +258,6 @@ public class VChooseActivity extends Activity implements OnClickListener{
 					default:
 						break;
 					}
-					break;
 
 				default:
 					break;
@@ -309,6 +320,12 @@ public class VChooseActivity extends Activity implements OnClickListener{
 		public void run() {
 			currentItem = (currentItem + 1) % titleIds.length;
 			mHandler.sendEmptyMessage(0);
+			try {
+				Thread.sleep(1000);
+			} catch (InterruptedException e) {
+				// TODO Auto-generated catch block
+				e.printStackTrace();
+			}
 		}
 	}
 
