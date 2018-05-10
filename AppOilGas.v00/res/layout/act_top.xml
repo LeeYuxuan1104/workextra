@@ -35,7 +35,6 @@
 	    android:textColor="#ffffff"
 	    android:textStyle="bold"
 	    android:gravity="center"
-	    android:layout_toRightOf="@id/back"
-	    android:layout_toLeftOf="@id/home"
+	    android:layout_centerInParent="true"
 	    />
 </RelativeLayout>

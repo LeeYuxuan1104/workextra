@@ -19,5 +19,8 @@
     <string name="test_devicemanage">设备管理</string>
     <string name="test_customermanage">客户管理</string>
     <string name="test_transmanage">传输管理</string>
+    <string name="test_month">按月分析</string>
+    <string name="test_Quarterly">季度分析</string>
+    <string name="test_year">按年分析</string>
 
 </resources>

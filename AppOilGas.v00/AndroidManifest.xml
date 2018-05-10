@@ -91,7 +91,31 @@
             android:theme="@android:style/Theme.NoTitleBar" 
             >
         </activity>
-        <activity
+        <activity 
+            android:name="com.view.run.a.VRAFinanceActivity"
+            android:screenOrientation="portrait"
+            android:theme="@android:style/Theme.NoTitleBar" 
+            >
+        </activity>
+        <activity 
+            android:name="com.view.run.a.VRAHabitActivity"
+            android:screenOrientation="portrait"
+            android:theme="@android:style/Theme.NoTitleBar" 
+            >
+        </activity>
+        <activity 
+            android:name="com.view.run.a.VRATonActivity"
+            android:screenOrientation="portrait"
+            android:theme="@android:style/Theme.NoTitleBar" 
+            >
+        </activity>
+        <activity 
+            android:name="com.view.run.a.VRATrendActivity"
+            android:screenOrientation="portrait"
+            android:theme="@android:style/Theme.NoTitleBar" 
+            >
+        </activity>
+       <activity
             android:name="com.view.energy.VEnergyLNGActivity"
             android:screenOrientation="portrait"
             android:theme="@android:style/Theme.NoTitleBar"></activity>

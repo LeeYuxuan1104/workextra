@@ -1,10 +1,6 @@
 package com.model.view;
-
-import com.app.zhugeyang.R;
 import android.app.Activity;
 import android.graphics.Color;
-import android.view.View;
-import android.view.View.OnClickListener;
 import android.widget.RelativeLayout;
 
 public class ChooseMenuView extends Activity{

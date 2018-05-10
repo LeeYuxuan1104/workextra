@@ -1,5 +1,6 @@
 <?xml version="1.0" encoding="utf-8"?>
 <RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
     android:layout_width="fill_parent"
     android:layout_height="fill_parent"
     android:background="#ffffff" >
@@ -24,17 +25,17 @@
             android:orientation="horizontal" >
 
             <RelativeLayout
-                android:id="@+id/run"
+                android:id="@+id/lay1"
                 android:layout_width="fill_parent"
                 android:layout_height="fill_parent"
                 android:layout_weight="1" >
 
                 <TextView
+                    android:id="@+id/txt1"
                     android:layout_width="wrap_content"
                     android:layout_height="wrap_content"
                     android:layout_centerInParent="true"
                     android:gravity="center"
-                    android:text="@string/test_runmanage"
                     android:textColor="#000000"
                     android:textSize="15sp" />
             </RelativeLayout>
@@ -46,17 +47,17 @@
                 android:background="#CFCFCF" />
 
             <RelativeLayout
-                android:id="@+id/device"
+                android:id="@+id/lay2"
                 android:layout_width="fill_parent"
                 android:layout_height="fill_parent"
                 android:layout_weight="1" >
 
                 <TextView
+                    android:id="@+id/txt2"
                     android:layout_width="wrap_content"
                     android:layout_height="wrap_content"
                     android:layout_centerInParent="true"
                     android:gravity="center"
-                    android:text="@string/test_devicemanage"
                     android:textColor="#000000"
                     android:textSize="15sp" />
             </RelativeLayout>
@@ -68,17 +69,17 @@
                 android:background="#CFCFCF" />
 
             <RelativeLayout
-                android:id="@+id/customer"
+                android:id="@+id/lay3"
                 android:layout_width="fill_parent"
                 android:layout_height="fill_parent"
                 android:layout_weight="1" >
 
                 <TextView
+                    android:id="@+id/txt3"
                     android:layout_width="wrap_content"
                     android:layout_height="wrap_content"
                     android:layout_centerInParent="true"
                     android:gravity="center"
-                    android:text="@string/test_customermanage"
                     android:textColor="#000000"
                     android:textSize="15sp" />
             </RelativeLayout>
@@ -90,17 +91,17 @@
                 android:background="#CFCFCF" />
 
             <RelativeLayout
-                android:id="@+id/trans"
+                android:id="@+id/lay4"
                 android:layout_width="fill_parent"
                 android:layout_height="fill_parent"
                 android:layout_weight="1" >
 
                 <TextView
+                    android:id="@+id/txt4"
                     android:layout_width="fill_parent"
                     android:layout_height="wrap_content"
                     android:layout_centerInParent="true"
                     android:gravity="center"
-                    android:text="@string/test_transmanage"
                     android:textColor="#000000"
                     android:textSize="15sp" />
             </RelativeLayout>
@@ -117,16 +118,17 @@
             android:orientation="horizontal" >
 
             <RelativeLayout
+                android:id="@+id/lay5"
                 android:layout_width="fill_parent"
                 android:layout_height="fill_parent"
                 android:layout_weight="1" >
 
                 <TextView
+                    android:id="@+id/txt5"
                     android:layout_width="wrap_content"
                     android:layout_height="wrap_content"
                     android:layout_centerInParent="true"
                     android:gravity="center"
-                    android:text="@string/test_runmanage"
                     android:textColor="#000000"
                     android:textSize="15sp" />
             </RelativeLayout>
@@ -138,16 +140,17 @@
                 android:background="#CFCFCF" />
 
             <RelativeLayout
+                android:id="@+id/lay6"
                 android:layout_width="fill_parent"
                 android:layout_height="fill_parent"
                 android:layout_weight="1" >
 
                 <TextView
+                    android:id="@+id/txt6"
                     android:layout_width="wrap_content"
                     android:layout_height="wrap_content"
                     android:layout_centerInParent="true"
                     android:gravity="center"
-                    android:text="@string/test_devicemanage"
                     android:textColor="#000000"
                     android:textSize="15sp" />
             </RelativeLayout>
@@ -159,20 +162,22 @@
                 android:background="#CFCFCF" />
 
             <RelativeLayout
+                android:id="@+id/lay7"
                 android:layout_width="fill_parent"
                 android:layout_height="fill_parent"
                 android:layout_weight="1" >
 
                 <TextView
+                    android:id="@+id/txt7"
                     android:layout_width="wrap_content"
                     android:layout_height="wrap_content"
                     android:layout_centerInParent="true"
                     android:gravity="center"
-                    android:text="@string/test_customermanage"
                     android:textColor="#000000"
                     android:textSize="15sp" />
             </RelativeLayout>
         </LinearLayout>
+
         <View
             android:layout_width="fill_parent"
             android:layout_height="1dip"
@@ -184,16 +189,17 @@
             android:orientation="horizontal" >
 
             <RelativeLayout
+                android:id="@+id/lay8"
                 android:layout_width="fill_parent"
                 android:layout_height="fill_parent"
                 android:layout_weight="1" >
 
                 <TextView
+                    android:id="@+id/txt8"
                     android:layout_width="wrap_content"
                     android:layout_height="wrap_content"
                     android:layout_centerInParent="true"
                     android:gravity="center"
-                    android:text="@string/test_runmanage"
                     android:textColor="#000000"
                     android:textSize="15sp" />
             </RelativeLayout>
@@ -205,16 +211,17 @@
                 android:background="#CFCFCF" />
 
             <RelativeLayout
+                android:id="@+id/lay9"
                 android:layout_width="fill_parent"
                 android:layout_height="fill_parent"
                 android:layout_weight="1" >
 
                 <TextView
+                    android:id="@+id/txt9"
                     android:layout_width="wrap_content"
                     android:layout_height="wrap_content"
                     android:layout_centerInParent="true"
                     android:gravity="center"
-                    android:text="@string/test_devicemanage"
                     android:textColor="#000000"
                     android:textSize="15sp" />
             </RelativeLayout>
@@ -226,19 +233,21 @@
                 android:background="#CFCFCF" />
 
             <RelativeLayout
+                android:id="@+id/lay10"
                 android:layout_width="fill_parent"
                 android:layout_height="fill_parent"
                 android:layout_weight="1" >
 
                 <TextView
+                    android:id="@+id/txt10"
                     android:layout_width="wrap_content"
                     android:layout_height="wrap_content"
                     android:layout_centerInParent="true"
                     android:gravity="center"
-                    android:text="@string/test_customermanage"
                     android:textColor="#000000"
                     android:textSize="15sp" />
             </RelativeLayout>
+
             <View
                 android:layout_width="1dip"
                 android:layout_height="fill_parent"
@@ -246,23 +255,107 @@
                 android:background="#CFCFCF" />
 
             <RelativeLayout
+                android:id="@+id/lay11"
                 android:layout_width="fill_parent"
                 android:layout_height="fill_parent"
                 android:layout_weight="1" >
 
                 <TextView
+                    android:id="@+id/txt11"
                     android:layout_width="wrap_content"
                     android:layout_height="wrap_content"
                     android:layout_centerInParent="true"
                     android:gravity="center"
-                    android:text="@string/test_customermanage"
                     android:textColor="#000000"
                     android:textSize="15sp" />
             </RelativeLayout>
         </LinearLayout>
+
         <View
             android:layout_width="fill_parent"
             android:layout_height="1dip"
             android:background="#CFCFCF" />
     </LinearLayout>
+
+    <LinearLayout
+        android:layout_width="fill_parent"
+        android:layout_height="fill_parent"
+        android:layout_below="@id/laytop"
+        android:background="#262b31"
+        android:orientation="vertical" >
+
+        <!-- 习惯 -->
+
+        <LinearLayout
+            android:layout_width="fill_parent"
+            android:layout_height="wrap_content"
+            android:layout_weight="1"
+            android:background="#373e49"
+            android:orientation="vertical" >
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:orientation="vertical"
+                tools:ignore="UselessParent" >
+
+                <LinearLayout
+                    android:id="@+id/arc"
+                    android:layout_width="match_parent"
+                    android:layout_height="match_parent"
+                    android:layout_marginTop="10dp"
+                    android:layout_weight="42"
+                    android:gravity="center_horizontal"
+                    android:orientation="vertical"
+                    tools:ignore="HardcodedText" >
+
+                </LinearLayout>
+
+                <LinearLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="match_parent"
+                    android:layout_weight="58"
+                    android:orientation="vertical" >
+
+                    <HorizontalScrollView
+                        android:layout_width="fill_parent"
+                        android:layout_height="fill_parent"
+                        android:layout_margin="20dp"
+                        android:scrollbars="none" >
+
+                        <RelativeLayout
+                            android:id="@+id/pillars"
+                            android:layout_width="fill_parent"
+                            android:layout_height="fill_parent"
+                            tools:ignore="ScrollViewSize" >
+                        </RelativeLayout>
+                    </HorizontalScrollView>
+                </LinearLayout>
+            </LinearLayout>
+        </LinearLayout>
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:layout_weight="2"
+            android:background="#f4f4f7"
+            android:orientation="vertical" >
+
+            <HorizontalScrollView
+                android:layout_width="fill_parent"
+                android:layout_height="fill_parent"
+                android:layout_margin="20dp"
+                android:scrollbars="none"
+                tools:ignore="UselessParent" >
+
+                <RelativeLayout
+                    android:id="@+id/linear"
+                    android:layout_width="fill_parent"
+                    android:layout_height="fill_parent"
+                    tools:ignore="ScrollViewSize" >
+                </RelativeLayout>
+            </HorizontalScrollView>
+        </LinearLayout>
+    </LinearLayout>
+
 </RelativeLayout>

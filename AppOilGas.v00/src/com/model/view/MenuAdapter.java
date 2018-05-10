@@ -11,7 +11,7 @@ import android.widget.TextView;
 
 public class MenuAdapter extends BaseAdapter{
 	private Context mContext;
-	private String[] names;;
+	private String[] names;
 	private int size = 0;
 
 	public MenuAdapter(Context context, String[] names) {

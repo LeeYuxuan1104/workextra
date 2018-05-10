@@ -2,7 +2,11 @@ package com.view.run;
 
 import com.app.zhugeyang.R;
 import com.model.view.MenuAdapter;
+import com.view.run.a.VRAFinanceActivity;
+import com.view.run.a.VRAHabitActivity;
 import com.view.run.a.VRAIncomeActivity;
+import com.view.run.a.VRATonActivity;
+import com.view.run.a.VRATrendActivity;
 
 import android.app.Activity;
 import android.content.Context;
@@ -50,12 +54,23 @@ public class VRunAnalysisActivity extends Activity implements OnClickListener{
 
 			@Override
 			public void onItemClick(AdapterView<?> arg0, View arg1, int position,
-					long arg3) {
+					long id) {
 				switch (position) {
 				case 0:
 					intent=new Intent(context, VRAIncomeActivity.class);
 					break;
-
+				case 1:
+					intent=new Intent(context, VRATrendActivity.class);
+					break;
+				case 2:
+					intent=new Intent(context, VRAHabitActivity.class);
+					break;
+				case 3:
+					intent=new Intent(context, VRAFinanceActivity.class);
+					break;
+				case 4:
+					intent=new Intent(context, VRATonActivity.class);
+					break;
 				default:
 					break;
 				}
